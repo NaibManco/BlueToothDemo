@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_back">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        style="@style/left_right__margin"
+        android:gravity="center_horizontal">
+        <ImageView 
+            android:id="@+id/custom_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView 
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_bar"
+        style="@style/left_right__margin"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" 
+        android:orientation="vertical"
+        style="@style/left_right__margin">
+        <EditText 
+            android:id="@+id/msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:singleLine="false"/>
+        
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" 
+        android:layout_marginBottom="10dp"
+        style="@style/left_right__margin">
+
+        <Button 
+		    android:id="@+id/custom_yes"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/custom_yes_text"
+		    android:layout_marginLeft="20dp"/>
+
+      	<Button 
+	        android:id="@+id/custom_no"
+	       	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/custom_no_text"
+	        android:layout_marginRight="20dp"
+	        android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    
+</LinearLayout>
